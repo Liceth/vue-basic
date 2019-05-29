@@ -5,6 +5,9 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Vue Components</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="componentes/saludos.js"></script>
+    <script src="componentes/contador.js"></script>
+
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
@@ -12,20 +15,9 @@
 <body>
     <div id="app">
         <saludo></saludo>
+        <contador></contador>
     </div>
     <script>
-        Vue.component('saludo', {
-            template:`
-            <div>
-                <h1>{{saludo}}</h1>
-                <h3>Ingrese aqui lo que desee</h3>
-            </div>`,
-            data(){
-                return{
-                    saludo:"Hola Vue Vixens"
-                }
-            }
-        });
         new Vue({
             el:'#app'
         })
